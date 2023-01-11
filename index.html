@@ -9,32 +9,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="city">
-            <div class="cityName"></div>
-            <div class="inCity">
-                <input type="text" id="citySearch" minlength="3" required>
-                <button type="submit" id="cityBtn">Search</button>
-            </div>
-        </div>
-        <div class="mainWeather">
-            <div class="temperature">
-                <div class="currentTemp"></div>
-                <div class="degree">°C</div>
-            </div>
-            <div class="weather">
-                <div class="wIcon">
-                    <img src="" alt="weather icon" id="weatherIcon">
+    <div class="background">
+        <div class="container">
+            <div class="city">
+                <div class="inCity">
+                    <form action="" id="searchForm">
+                        <input type="text" id="citySearch" minlength="3" placeholder="Search a new city..." autocomplete="off" required>
+                        <button type="submit" id="cityBtn">&#x1F50E;</button>
+                    </form>
                 </div>
-                <div class="wDesc"></div>
+                <div class="cityName"></div>
             </div>
+            <div class="mainWeather">
+                <div class="temperature">
+                    <div class="currentTemp"></div>
+                    <div class="degree">°C</div>
+                </div>
+                <div class="weather">
+                    <div class="wIcon">
+                        <img src="" alt="weather icon" id="weatherIcon">
+                    </div>
+                    <div class="wDesc"></div>
+                </div>
+            </div>
+            <div class="mainDetails">
+                <div class="feelsLike"></div>
+                <div class="tempMax"></div>
+                <div class="tempMin"></div>
+            </div>
+            <!-- <div class="forecast"></div> -->
         </div>
-        <div class="mainDetails">
-            <div class="feelsLike"></div>
-            <div class="tempMax"></div>
-            <div class="tempMin"></div>
-        </div>
-        <div class="forecast"></div>
     </div>
 </body>
 </html>

@@ -2,33 +2,80 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+    cursor: default;
+}
+
+.background {
+    background-image: url(../src/resources/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr 5fr;
-    background-color: #b5c2c7;
-    height: 100vh;
-    width: 100vw;
+    grid-template-rows: 2fr 5fr 1fr /*3fr*/;
+    background-color: rgba(227, 188, 166, 0.9);
+    align-self: center;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0px 0px 5px 6px rgba(0,0,0,0.2);
 }
 
 .city {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    gap: 10px;
+}
+
+.inCity {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
 .cityName {
-    color: #455954;
+    color: #8d4f48;
     font-size: 3rem;
+}
+
+#citySearch {
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid #dbb2a5;
+    background-color: rgba(227, 188, 166, 0.9);
+    outline: none;
+}
+
+#cityBtn {
+    background-color: rgba(227, 188, 166, 0.9);
+    border-radius: 12px;
+    border: 1px solid #dbb2a5;
+    padding: 5px 10px;
+}
+
+#cityBtn:hover {
+    cursor: pointer;
+    background-color: rgba(227, 188, 166, 1);
+}
+
+#cityBtn:active {
+    background-color: rgba(197, 153, 128, 0.9);
 }
 
 .mainWeather {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
 }
 
 .temperature {
@@ -36,21 +83,33 @@ body {
 }
 
 .currentTemp {
-    font-size: 12rem;
-    color: #565c5e;
+    font-size: 5rem;
+    color: #8d4f48;
 }
 
 .degree {
     font-size: 3rem;
-    color: #565c5e;
+    color: #8d4f48;
+}
+
+.weather {
+    text-align: center;
 }
 
 .wDesc {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
-    color: #565c5e;
+    color: #8d4f48;
 }
 
 .wIcon img {
-    height: 300px;
+    height: 100px;
+}
+
+.mainDetails {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    text-align: center;
+    color: #8d4f48;
 }
