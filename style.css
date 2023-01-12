@@ -20,7 +20,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: 2fr 5fr 1fr /*3fr*/;
-    background-color: rgba(227, 188, 166, 0.9);
+    /* background-color: rgba(56, 163, 165, 0.7); */
     align-self: center;
     border-radius: 8px;
     padding: 20px;
@@ -44,20 +44,25 @@ body {
 }
 
 .cityName {
-    color: #8d4f48;
+    color: #22577A;
     font-size: 3rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #22577A;
 }
 
 #citySearch {
     padding: 5px;
     border-radius: 12px;
     border: 1px solid #dbb2a5;
-    background-color: rgba(227, 188, 166, 0.9);
+    /* background-color: rgba(56, 163, 165, 0.7); */
     outline: none;
 }
 
 #cityBtn {
-    background-color: rgba(227, 188, 166, 0.9);
+    /* background-color: rgba(56, 163, 165, 0.7); */
     border-radius: 12px;
     border: 1px solid #dbb2a5;
     padding: 5px 10px;
@@ -65,11 +70,12 @@ body {
 
 #cityBtn:hover {
     cursor: pointer;
-    background-color: rgba(227, 188, 166, 1);
+    border: 1px solid #22577A;
+    /* background-color: rgba(56, 163, 165, 0.7); */
 }
 
 #cityBtn:active {
-    background-color: rgba(197, 153, 128, 0.9);
+    background-color: rgba(34, 87, 122, 0.9);
 }
 
 .mainWeather {
@@ -84,12 +90,12 @@ body {
 
 .currentTemp {
     font-size: 5rem;
-    color: #8d4f48;
+    color: #22577A;
 }
 
 .degree {
     font-size: 3rem;
-    color: #8d4f48;
+    color: #22577A;
 }
 
 .weather {
@@ -99,7 +105,7 @@ body {
 .wDesc {
     font-size: 1.5rem;
     text-align: center;
-    color: #8d4f48;
+    color: #22577A;
 }
 
 .wIcon img {
@@ -111,5 +117,5 @@ body {
     justify-content: space-evenly;
     font-size: 1rem;
     text-align: center;
-    color: #8d4f48;
+    color: #22577A;
 }
