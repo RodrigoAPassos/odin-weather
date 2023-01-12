@@ -14,8 +14,16 @@
             <div class="city">
                 <div class="inCity">
                     <form action="" id="searchForm">
-                        <input type="text" id="citySearch" minlength="3" placeholder="Search a new city..." autocomplete="off" required>
+                        <input type="radio" name="degrees" id="celsius" value="metric" checked>
+                        <label for="celsius">°C</label>
+                        <input type="radio" name="degrees" id="fahrenheit" value="imperial">
+                        <label for="fahrenheit">°F</label>
+                        <input type="text" id="citySearch" minlength="3" placeholder="Search for a new city..." autocomplete="off" required>
                         <button type="submit" id="cityBtn">&#x1F50E;</button>
+                        <input type="radio" name="lan" id="br" value="pt_br" checked>
+                        <label for="br">Pt-Br</label>
+                        <input type="radio" name="lan" id="en" value="en">
+                        <label for="br">En</label>
                     </form>
                 </div>
                 <div class="cityName"></div>
@@ -23,7 +31,7 @@
             <div class="mainWeather">
                 <div class="temperature">
                     <div class="currentTemp"></div>
-                    <div class="degree">°C</div>
+                    <div class="degree"></div>
                 </div>
                 <div class="weather">
                     <div class="wIcon">
