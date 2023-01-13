@@ -8,7 +8,7 @@ body {
 }
 
 .background {
-    background-image: url(../src/resources/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
+    background-image: url(./resources/katerina-kerdi--YiJvbfNDqk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     display: grid;
