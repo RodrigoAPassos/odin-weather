@@ -4,7 +4,9 @@ const today = {};
 async function getWeather(city = "Santos", lang = "pt_br", units = "metric") {
     try {
         //get currrent temperature and forecast
-        const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=362b4128cbee127097cbd92b54543c42&units=${units}`)
+        const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&appid=362b4128cbee127097cbd92b54543c42&units=${units}`, {
+            mode: 'cors'
+          });
         const weatherData = await weather.json();
 
         //process json current temperature data
