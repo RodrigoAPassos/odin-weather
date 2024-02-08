@@ -1,6 +1,6 @@
 # Quick Weather App
 
-+ Seach for and discover the current weather of more then 200,000 cities!;
++ Seach for and discover the current weather of more than 200,000 cities!;
     + With Feels Like temperature!;
     + Resullts in English or Brazillian Portuguese!
 + Discover the Maximum and Minimum temperatures for the day;
